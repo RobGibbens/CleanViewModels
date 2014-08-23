@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CleanViewModels/ViewModels/UserViewModel.cs">
+    <Files>
+      <File FileName="CleanViewModels/UserPage.xaml" Line="46" Column="46" />
+      <File FileName="CleanViewModels/ViewModels/UserViewModel.cs" Line="2" Column="2" />
+      <File FileName="CleanViewModels/UserPage.xaml.cs" Line="2" Column="2" />
+      <File FileName="CleanViewModels/ViewPage.cs" Line="2" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

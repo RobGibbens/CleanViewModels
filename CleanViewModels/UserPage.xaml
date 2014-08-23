@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<local:UserPageBase 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="CleanViewModels.UserPage" 
+	xmlns:local="clr-namespace:CleanViewModels;assembly=CleanViewModels">
+
+	<ContentPage.Padding>
+		<OnPlatform 
+			x:TypeArguments="Thickness" 
+			iOS="5,20,5,5" 
+			Android="5,0,5,5" 
+			WinPhone="5,0,5,5" />
+	</ContentPage.Padding>
+
+	<StackLayout>
+		<Entry Text="{ Binding FirstName, Mode=TwoWay }" />
+		<Entry Text="{ Binding LastName, Mode=TwoWay }" />
+
+		<Button 
+	      Text="Load User"
+	      Command="{Binding LoadUser}"></Button>
+    </StackLayout>
+</local:UserPageBase>	
