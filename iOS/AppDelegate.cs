@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
-
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.iOS;
 
 namespace CleanViewModels.iOS
 {
 	[Register ("AppDelegate")]
-	public partial class AppDelegate : UIApplicationDelegate
+	public partial class AppDelegate : FormsApplicationDelegate
 	{
 		UIWindow window;
 
@@ -18,13 +14,9 @@ namespace CleanViewModels.iOS
 		{
 			Forms.Init ();
 
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			LoadApplication (new App ());
 			
-			window.RootViewController = App.GetMainPage ().CreateViewController ();
-			window.MakeKeyAndVisible ();
-			
-			return true;
+			return base.FinishedLaunching(app, options);
 		}
 	}
 }
-

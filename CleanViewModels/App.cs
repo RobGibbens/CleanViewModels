@@ -3,11 +3,11 @@ using Xamarin.Forms;
 
 namespace CleanViewModels
 {
-	public class App
+	public class App : Application
 	{
-		public static Page GetMainPage ()
-		{	
-			return new UserPage ();
+		public App ()
+		{
+			MainPage = new UserPage ();
 		}
 	}
 }
